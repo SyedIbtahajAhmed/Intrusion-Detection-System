@@ -1,0 +1,7 @@
+UI Design file to .PY File Conversion Command:
+
+
+
+IN CMD:
+
+"C:\Users\AKS iQ\anaconda3\Library\bin\pyuic5.bat" -x updated_design.ui -o updated_design_code.py
