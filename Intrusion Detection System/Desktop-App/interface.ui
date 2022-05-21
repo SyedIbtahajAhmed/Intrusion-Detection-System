@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1051</width>
+    <width>1105</width>
     <height>614</height>
    </rect>
   </property>
@@ -49,7 +49,7 @@
      <widget class="QFrame" name="slide_menu_container">
       <property name="minimumSize">
        <size>
-        <width>0</width>
+        <width>300</width>
         <height>0</height>
        </size>
       </property>
@@ -260,7 +260,7 @@ QToolBox::tab:Hover {
                  <rect>
                   <x>0</x>
                   <y>0</y>
-                  <width>178</width>
+                  <width>280</width>
                   <height>448</height>
                  </rect>
                 </property>
@@ -269,7 +269,7 @@ QToolBox::tab:Hover {
                   <normaloff>:/icons/icons/chevron-down.svg</normaloff>:/icons/icons/chevron-down.svg</iconset>
                 </attribute>
                 <attribute name="label">
-                 <string>Dropdown Menu 1</string>
+                 <string>Theme Settings</string>
                 </attribute>
                 <layout class="QVBoxLayout" name="verticalLayout_6">
                  <property name="spacing">
@@ -297,6 +297,8 @@ QToolBox::tab:Hover {
                    <property name="styleSheet">
                     <string notr="true">QPushButton {
 	padding: 0 0 0 20px;
+	font-size: 20px;
+	font-family: Calibri;
 	height: 40px;
 	border-radius: 5px;
 	background-color: #008080;
@@ -306,6 +308,8 @@ QToolBox::tab:Hover {
 
 QPushButton:Hover{
 	padding: 0 0 0 20px;
+	font-size: 20px;
+	font-family: Calibri;
 	height: 40px;
 	border-radius: 10px;
 	background-color: #000000;
@@ -337,53 +341,95 @@ QPushButton:Hover{
                      <number>0</number>
                     </property>
                     <item>
-                     <widget class="QPushButton" name="pushButton_5">
+                     <widget class="QPushButton" name="aqua_theme_button">
                       <property name="font">
                        <font>
                         <family>Calibri</family>
-                        <pointsize>12</pointsize>
+                        <pointsize>-1</pointsize>
                        </font>
                       </property>
                       <property name="text">
-                       <string>Item 1</string>
+                       <string>Aqua Theme</string>
                       </property>
                       <property name="icon">
                        <iconset resource="icons.qrc">
-                        <normaloff>:/icons/icons/bluetooth.svg</normaloff>:/icons/icons/bluetooth.svg</iconset>
+                        <normaloff>:/icons/icons/square.svg</normaloff>:/icons/icons/square.svg</iconset>
+                      </property>
+                      <property name="checkable">
+                       <bool>false</bool>
+                      </property>
+                      <property name="autoDefault">
+                       <bool>false</bool>
+                      </property>
+                      <property name="default">
+                       <bool>false</bool>
                       </property>
                      </widget>
                     </item>
                     <item>
-                     <widget class="QPushButton" name="pushButton_6">
+                     <widget class="QPushButton" name="red_theme_button">
                       <property name="font">
                        <font>
                         <family>Calibri</family>
-                        <pointsize>12</pointsize>
+                        <pointsize>-1</pointsize>
                        </font>
                       </property>
                       <property name="text">
-                       <string>Item 2</string>
+                       <string>Red Theme</string>
                       </property>
                       <property name="icon">
                        <iconset resource="icons.qrc">
-                        <normaloff>:/icons/icons/calendar.svg</normaloff>:/icons/icons/calendar.svg</iconset>
+                        <normaloff>:/icons/icons/square.svg</normaloff>:/icons/icons/square.svg</iconset>
                       </property>
                      </widget>
                     </item>
                     <item>
-                     <widget class="QPushButton" name="pushButton_7">
+                     <widget class="QPushButton" name="yellow_theme_button">
                       <property name="font">
                        <font>
                         <family>Calibri</family>
-                        <pointsize>12</pointsize>
+                        <pointsize>-1</pointsize>
                        </font>
                       </property>
                       <property name="text">
-                       <string>Item 3</string>
+                       <string>Yellow Theme</string>
                       </property>
                       <property name="icon">
                        <iconset resource="icons.qrc">
-                        <normaloff>:/icons/icons/cast.svg</normaloff>:/icons/icons/cast.svg</iconset>
+                        <normaloff>:/icons/icons/square.svg</normaloff>:/icons/icons/square.svg</iconset>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="green_theme_button">
+                      <property name="text">
+                       <string>Green Theme</string>
+                      </property>
+                      <property name="icon">
+                       <iconset resource="icons.qrc">
+                        <normaloff>:/icons/icons/square.svg</normaloff>:/icons/icons/square.svg</iconset>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="brown_theme_button">
+                      <property name="text">
+                       <string>Brown Theme</string>
+                      </property>
+                      <property name="icon">
+                       <iconset resource="icons.qrc">
+                        <normaloff>:/icons/icons/square.svg</normaloff>:/icons/icons/square.svg</iconset>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="white_theme_button">
+                      <property name="text">
+                       <string>White Theme</string>
+                      </property>
+                      <property name="icon">
+                       <iconset resource="icons.qrc">
+                        <normaloff>:/icons/icons/square.svg</normaloff>:/icons/icons/square.svg</iconset>
                       </property>
                      </widget>
                     </item>
@@ -397,7 +443,7 @@ QPushButton:Hover{
                  <rect>
                   <x>0</x>
                   <y>0</y>
-                  <width>178</width>
+                  <width>280</width>
                   <height>448</height>
                  </rect>
                 </property>
@@ -406,8 +452,133 @@ QPushButton:Hover{
                   <normaloff>:/icons/icons/chevron-down.svg</normaloff>:/icons/icons/chevron-down.svg</iconset>
                 </attribute>
                 <attribute name="label">
-                 <string>Dropdown 2</string>
+                 <string>Grid Settings</string>
                 </attribute>
+                <layout class="QVBoxLayout" name="verticalLayout_19">
+                 <property name="spacing">
+                  <number>10</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item alignment="Qt::AlignTop">
+                  <widget class="QFrame" name="frame_4">
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>448</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton {
+	padding: 0 0 0 20px;
+	font-size: 20px;
+	font-family: Calibri;
+	height: 40px;
+	border-radius: 5px;
+	background-color: #008080;
+	text-align: left;
+	border: 2px solid #000000;
+}
+
+QPushButton:Hover{
+	padding: 0 0 0 20px;
+	font-size: 20px;
+	font-family: Calibri;
+	height: 40px;
+	border-radius: 10px;
+	background-color: #000000;
+	color: #008080;
+	text-align: left;
+	border: 2px solid #5F9EA0;
+}</string>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_20">
+                    <property name="spacing">
+                     <number>10</number>
+                    </property>
+                    <property name="leftMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>0</number>
+                    </property>
+                    <item>
+                     <widget class="QPushButton" name="grid_22_Button">
+                      <property name="text">
+                       <string>2 x 2 Grid</string>
+                      </property>
+                      <property name="icon">
+                       <iconset resource="icons.qrc">
+                        <normaloff>:/icons/icons/grid.svg</normaloff>:/icons/icons/grid.svg</iconset>
+                      </property>
+                      <property name="iconSize">
+                       <size>
+                        <width>30</width>
+                        <height>30</height>
+                       </size>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="grid_33_Button">
+                      <property name="text">
+                       <string>3 x 3 Grid</string>
+                      </property>
+                      <property name="icon">
+                       <iconset resource="icons.qrc">
+                        <normaloff>:/icons/icons/grid.svg</normaloff>:/icons/icons/grid.svg</iconset>
+                      </property>
+                      <property name="iconSize">
+                       <size>
+                        <width>30</width>
+                        <height>30</height>
+                       </size>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="grid_44_Button">
+                      <property name="text">
+                       <string>4 x 4 Grid</string>
+                      </property>
+                      <property name="icon">
+                       <iconset resource="icons.qrc">
+                        <normaloff>:/icons/icons/grid.svg</normaloff>:/icons/icons/grid.svg</iconset>
+                      </property>
+                      <property name="iconSize">
+                       <size>
+                        <width>30</width>
+                        <height>30</height>
+                       </size>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
                </widget>
               </widget>
              </item>
@@ -1000,6 +1171,9 @@ QPushButton:Hover {
                        <height>70</height>
                       </size>
                      </property>
+                     <property name="toolTip">
+                      <string>All Cameras</string>
+                     </property>
                      <property name="styleSheet">
                       <string notr="true">background-color: #008080; border-top-left-radius: 25px; border-bottom-left-radius: 25px;</string>
                      </property>
@@ -1189,7 +1363,7 @@ QToolBox::tab:Hover {
 </string>
                   </property>
                   <property name="currentIndex">
-                   <number>1</number>
+                   <number>0</number>
                   </property>
                   <property name="tabSpacing">
                    <number>5</number>
@@ -1199,7 +1373,7 @@ QToolBox::tab:Hover {
                     <rect>
                      <x>0</x>
                      <y>0</y>
-                     <width>282</width>
+                     <width>69</width>
                      <height>492</height>
                     </rect>
                    </property>
@@ -1236,6 +1410,49 @@ QToolBox::tab:Hover {
                       <property name="frameShadow">
                        <enum>QFrame::Raised</enum>
                       </property>
+                      <layout class="QVBoxLayout" name="verticalLayout_17">
+                       <property name="spacing">
+                        <number>0</number>
+                       </property>
+                       <property name="leftMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="topMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="rightMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="bottomMargin">
+                        <number>0</number>
+                       </property>
+                       <item>
+                        <widget class="QScrollArea" name="status_panel_scroll_area">
+                         <property name="widgetResizable">
+                          <bool>true</bool>
+                         </property>
+                         <widget class="QWidget" name="status_panel_scroll_contents">
+                          <property name="geometry">
+                           <rect>
+                            <x>0</x>
+                            <y>0</y>
+                            <width>69</width>
+                            <height>492</height>
+                           </rect>
+                          </property>
+                          <layout class="QVBoxLayout" name="verticalLayout_18">
+                           <item>
+                            <widget class="QLabel" name="status_panel_label">
+                             <property name="text">
+                              <string>TextLabel</string>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </widget>
+                       </item>
+                      </layout>
                      </widget>
                     </item>
                    </layout>
@@ -1245,7 +1462,7 @@ QToolBox::tab:Hover {
                     <rect>
                      <x>0</x>
                      <y>0</y>
-                     <width>282</width>
+                     <width>69</width>
                      <height>492</height>
                     </rect>
                    </property>
@@ -1311,8 +1528,8 @@ QToolBox::tab:Hover {
                            <rect>
                             <x>0</x>
                             <y>0</y>
-                            <width>282</width>
-                            <height>492</height>
+                            <width>270</width>
+                            <height>475</height>
                            </rect>
                           </property>
                           <layout class="QVBoxLayout" name="verticalLayout_13">
